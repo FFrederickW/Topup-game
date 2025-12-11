@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #01010f, #0b1445);
+  color: white;
+}
+
+/* Center Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* CARD tanpa backdrop-filter */
+.login-card {
+  width: 350px;
+  padding: 35px 30px;
+  border-radius: 18px;
+
+  /* Elegan tanpa blur: memakai transparansi + soft gradient */
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.04)
+  );
+
+  /* Glow + smooth shadow */
+  box-shadow: 
+      0 8px 25px rgba(0, 0, 0, 0.55),
+      0 0 12px rgba(255, 105, 180, 0.2);
+
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.login-card h2 {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #4cc9f0;
+  font-size: 1.1rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 17px 12px 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.10);
+  color: white;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  background: rgba(255,255,255,0.18);
+  box-shadow: 0 0 6px rgba(76, 201, 240, 0.7);
+}
+
+/* Button */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: hotpink;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 12px rgba(255, 105, 180, 0.6);
+}
+
+.btn-login:hover {
+  background: #ff4fa3;
+  box-shadow: 0 0 18px rgba(255, 105, 180, 0.9);
+  transform: translateY(-2px);
+}
+
+/* Bottom Text */
+.bottom-text {
+  margin-top: 18px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.bottom-text a {
+  color: #4cc9f0;
+  text-decoration: none;
+  font-weight: 600;
+}
