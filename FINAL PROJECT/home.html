@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOGOPOWERANGERS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand">GGPR<i class="bi bi-patch-check-fill"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GGPR<i class="bi bi-patch-check-fill"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="ggpr-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Game</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Another
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">AKWKAOKW</a></li>
+              <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+              <li>
+              <hr class="dropdown-divider">
+              </li>  
+              <li>
+                <!-- <button class="btn-wa-dropdown" onclick="redirWhatsapp()">have a problem ?<i class="bi bi-whatsapp"></i></button> -->
+                  <button onclick="logoutUser()" class="btn btn-danger">Logout</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <section class="hero" id="topup">
+        <h1 id="welcome"></h1>
+        <p>Your one-stop solution for gaming needs!</p>
+    </section>
+
+    <section class="produk" id="produk">
+        <h1>Produk Populer</h1>
+        <div class=" produk-grid">
+            <div class="produk">
+                <a href="MLTopup.html"><img src="assets/mobileLegend.jpg" alt="produk 1"></a>
+                <h2>Mobile Legend</h2>
+            </div>
+            <div class="produk">
+                <a href="ValorantTopup.html"><img src="assets/valorant.jpg" alt="produk 2"></a>
+                <h2>Valorant</h2>
+            </div>
+            <div class="produk">
+                <a href="RobloxTopup.html"><img src="assets/roblox.jpg" alt="produk 3"></a>
+                <h2>Roblox</h2>
+            </div>
+        </div>
+    </section>
+    
+     <script src="auth.js"></script>
+
+    <script>
+      let user = localStorage.getItem("loggedInUser");
+
+      if (!user) {
+      alert("Kamu harus login dulu!");
+      window.location.href = "login.html";
+      } 
+
+      document.getElementById("welcome").textContent =
+      "Selamat datang, " + user + "!";
+    </script>
+
+    <script>
+        function logoutUser() {
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "login.html";
+        }
+    </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="app.js"></script>
+   
+</body>
+</html>
+

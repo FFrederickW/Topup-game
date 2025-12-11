@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGPR Login</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-card">
+
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Login to your GGPR Account</p>
+
+      <form>
+
+        <div class="input-group">
+          <i class="bi bi-person"></i>
+          <input type="text" id="username" placeholder="Username">
+        </div>
+
+        <div class="input-group">
+          <i class="bi bi-lock"></i>
+          <input type="password" id="password" placeholder="Password">
+        </div>
+
+        <button type="submit" onclick="handleLogin(event)" class="btn-login">
+          Login
+        </button>
+
+        <p class="bottom-text">
+          Don't have an account? <a href="register.html">Register</a>
+        </p>
+
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+        e.preventDefault();
+  
+        let user = document.getElementById("username").value;
+        let pass = document.getElementById("password").value;
+  
+        let result = loginUser(user, pass);
+  
+        alert(result.message);
+  
+        if (result.success) {
+            window.location.href = "home.html";
+        }
+    });
+  </script>
+  <script src="auth.js"></script>
+<script src="auth.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar-brand {
+  color: #ff69b4;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.navbar-brand i {
+  color: blue;
+  margin-left: 2px;
+}
+
+h5{
+  text-align: center;
+  margin-top: 20px;
+  color: hotpink;
+}
+
+h5 i {
+  color: blue;
+  margin-left: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, hotpink, #0D111A);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.hero button:hover {
+  background-color: #f1f1f1;
+}
+
+li a {
+  text-align: end;
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+li a:hover {
+  color: #2b0631;
+  transform: rotate(2deg);
+}
+
+.produk {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.produk h2 {
+  font-size: 2rem;
+  margin: 20px 30px;
+  color: #333;
+}
+
+.produk-grid {  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.produk {
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.produk:hover {
+  transform: translateY(-7px);
+}
+
+img {
+  max-width: 80%;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(50%); 
+  transition: filter 0.4s ease; 
+  border-radius: 10px;
+}
+
+img:hover {
+  filter: brightness(100%);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .produk-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 { font-size: 1.7rem; }
+  .hero p { font-size: 0.9rem; }
+}
