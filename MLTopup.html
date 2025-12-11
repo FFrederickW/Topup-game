@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends Top Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="ml.css">
+</head>
+
+<body>
+
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand">GGPR<i class="bi bi-patch-check-fill"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GGPR<i class="bi bi-patch-check-fill"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="ggpr-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Game</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Another
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">AKWKAOKW</a></li>
+              <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+              <li>
+              <hr class="dropdown-divider">
+              </li>  
+              <li>
+                <!-- <button class="btn-wa-dropdown" onclick="redirWhatsapp()">have a problem ?<i class="bi bi-whatsapp"></i></button> -->
+                  <button onclick="logoutUser()" class="btn btn-danger">Logout</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+
+        <!-- === LEFT SECTION === -->
+        <div class="left-section">
+            <img src="assets/mlwllpr.jpg" class="game-logo" alt="Mobile Legends" width="90">
+
+            <h2 class="game-title">Mobile Legends</h2>
+
+            <div class="info-icons">
+                <p>⚡ Jaminan Layanan</p>
+                <p>💬 Layanan Pelanggan 24/7</p>
+                <p>🔒 Pembayaran Aman</p>
+                <p>🚀 Pengiriman Instan</p>
+            </div>
+
+            <hr>
+
+            <p>
+                Top up Diamond ML hanya dalam hitungan detik!  
+                Masukkan User ID & Server MLBB Anda, pilih jumlah Diamond, selesaikan pembayaran, dan Diamond akan masuk otomatis.
+            </p>
+
+            <p><strong>Khusus Server Original, tidak bisa untuk Advance Server.</strong></p>
+        </div>
+
+        <!-- === RIGHT SECTION === -->
+        <div class="right-section">
+
+            <!-- Informasi Pelanggan -->
+            <h2 class="section-title">1️⃣ Informasi Pelanggan</h2>
+
+            <label>User ID</label>
+            <input type="text" placeholder="User ID">
+
+            <label>Server ID</label>
+            <input type="text" placeholder="Server ID">
+
+            <label>Nomor WhatsApp</label>
+            <input type="text" placeholder="08xxxxxxxxxx">
+
+            <!-- Pilih Nominal Top Up -->
+            <h2 class="section-title">2️⃣ Pilih Nominal Top Up</h2>
+
+            <div class="topup-grid">
+                <div class="card">
+                    <span class="badge">10% OFF</span>
+                    <h3>568 Diamonds</h3>
+                    <p>Rp 154.000,-</p>
+                </div>
+
+                <div class="card">
+                    <span class="badge">20% OFF</span>
+                    <h3>6030 Diamonds</h3>
+                    <p>Rp 1.534.498,-</p>
+                </div>
+
+                <div class="card">
+                    <span class="badge">20% OFF</span>
+                    <h3>Weekly Diamond Pass x5</h3>
+                    <p>Rp 145.275,-</p>
+                </div>
+
+                <div class="card">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp 2.000,-</p>
+                </div>
+
+                <div class="card">
+                    <h3>12 Diamonds</h3>
+                    <p>Rp 4.000,-</p>
+                </div>
+
+                <div class="card">
+                    <h3>19 Diamonds</h3>
+                    <p>Rp 6.000,-</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
