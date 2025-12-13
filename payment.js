@@ -21,18 +21,37 @@ function processPayment() {
   const zoneId = document.getElementById("zoneId").value;
   const phone = document.getElementById("phone").value;
 
-  if (!name || !userId || !zoneId || !phone) {
-    alert("Lengkapi data pelanggan");
+  if (!/^[A-Za-z\s]{3,}$/.test(name)) {
+    alert("❌ Nama minimal 3 huruf dan tidak boleh angka");
+    return;
+  }
+
+  // User ID: angka 6–12 digit
+  if (!/^[0-9]{6,12}$/.test(userId)) {
+    alert("❌ User ID harus angka 6–12 digit");
+    return;
+  }
+
+ 
+  // Server ID: angka 4–6 digit
+  if (!/^[0-9]{4,6}$/.test(zoneId)) {
+    alert("❌ Server ID harus angka 4–6 digit");
+    return;
+  }
+
+  // Nomor WhatsApp: 08xxxxxxxxxx
+  if (!/^08[0-9]{8,11}$/.test(phone)) {
+    alert("❌ Nomor WhatsApp tidak valid");
     return;
   }
 
   if (!selectedNominal) {
-    alert("Silakan pilih nominal top up");
+    alert("❌ Silakan pilih nominal top up");
     return;
   }
 
   if (!payment) {
-    alert("Silakan pilih metode pembayaran");
+    alert("❌ Silakan pilih metode pembayaran");
     return;
   }
 
