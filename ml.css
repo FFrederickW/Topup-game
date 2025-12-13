@@ -147,6 +147,54 @@ input:focus {
   font-weight: 700;
 }
 
+.payment-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.payment-option {
+  border: 2px solid #ddd;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+}
+
+.payment-option input {
+  display: none;
+}
+
+.payment-option:hover {
+  border-color: hotpink;
+}
+
+.payment-option input:checked + span {
+  color: hotpink;
+}
+
+.btn-pay {
+  width: 100%;
+  padding: 14px;
+  background: hotpink;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.topup-grid .card.active {
+  border: 2px solid hotpink;
+  transform: scale(1.03);
+}
+.btn-login:hover {
+  background: #ff4da3;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 950px) {
   .container {

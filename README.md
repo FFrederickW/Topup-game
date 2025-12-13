@@ -1,12 +1,23 @@
-# Topup-game
-# GGPR Top Up Game
+# 🎮 Mobile Legends Top Up Website
 
-Website top up game untuk Mobile Legends, Valorant, dan Roblox.
+Website simulasi top up Mobile Legends dengan fitur:
+- Pilih nominal Diamond
+- Simulasi pembayaran
+- Riwayat transaksi
+- Invoice otomatis
+- Admin Dashboard
 
-## Fitur
-- Register & Login with LocalStorage
-- Page Top Up
-- Login History
-- UI modern dan responsif
+## 🚀 Fitur
+- Payment simulation (LocalStorage)
+- History transaksi
+- Admin dashboard
+- Responsive UI
+- Status pembayaran (PENDING / SUCCESS)
 
-only use html, css, and js
+## 🛠 Teknologi
+- HTML
+- CSS
+- JavaScript
+- Bootstrap 5
+
+## 📂 Struktur Project

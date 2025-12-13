@@ -35,13 +35,12 @@
               Another
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="login.html">AKWKAOKW</a></li>
-              <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="history.html">History</a></li>
               <li>
               <hr class="dropdown-divider">
               </li>  
               <li>
-                <!-- <button class="btn-wa-dropdown" onclick="redirWhatsapp()">have a problem ?<i class="bi bi-whatsapp"></i></button> -->
                   <button onclick="logoutUser()" class="btn btn-danger">Logout</button>
               </li>
             </ul>
@@ -83,14 +82,17 @@
             <!-- Informasi Pelanggan -->
             <h2 class="section-title">1️⃣ Informasi Pelanggan</h2>
 
+            <label>Nama</label>
+            <input id="nama" type="text" placeholder="Nama">
+
             <label>User ID</label>
-            <input type="text" placeholder="User ID">
+            <input id="userId" type="text" placeholder="User ID">
 
             <label>Server ID</label>
-            <input type="text" placeholder="Server ID">
+            <input id="zoneId" type="text" placeholder="Server ID">
 
             <label>Nomor WhatsApp</label>
-            <input type="text" placeholder="08xxxxxxxxxx">
+            <input id="phone" type="text" placeholder="08xxxxxxxxxx">
 
             <!-- Pilih Nominal Top Up -->
             <h2 class="section-title">2️⃣ Pilih Nominal Top Up</h2>
@@ -134,5 +136,34 @@
 
     </div>
     
+    <h2 class="section-title">3️⃣ Metode Pembayaran</h2>
+
+  <div class="payment-methods">
+    <label class="payment-option">
+      <input type="radio" name="payment" value="Dana">
+      <span>💙 Dana</span>
+    </label>
+
+    <label class="payment-option">
+      <input type="radio" name="payment" value="OVO">
+      <span>💜 OVO</span>
+    </label>
+
+    <label class="payment-option">
+      <input type="radio" name="payment" value="Gopay">
+      <span>💚 GoPay</span>
+    </label>
+
+    <label class="payment-option">
+      <input type="radio" name="payment" value="QRIS">
+      <span>📱 QRIS</span>
+    </label>
+  </div>
+
+  <button class="btn-pay" onclick="processPayment()">Bayar Sekarang</button>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="payment.js"></script>
+
 </body>
 </html>
