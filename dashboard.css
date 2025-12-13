@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background: #f7f7f7;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: hotpink;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.invoice {
+  background: white;
+  padding: 30px;
+  width: 400px;
+  margin: auto;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.danger {
+  background: red;
+  color: white;
+}
